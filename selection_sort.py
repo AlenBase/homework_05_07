@@ -7,7 +7,7 @@ def selection_sort(array: list) -> list :
             for j in range(i + 1, len(array)):
                 if array[j] < array[min]:
                     min = j
-        array[i], array[min] = array[min], array[i]
+            array[i], array[min] = array[min], array[i]
     except Exception:
         raise ValueError('Elements must me int or float')
     return array
